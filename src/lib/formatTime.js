@@ -8,8 +8,9 @@ import padStart from 'lodash.padstart'
  */
 export default date => {
   return (
-    padStart(date.getHours(), 2, 0) +
-    padStart(date.getMinutes(), 2, 0) +
-    padStart(date.getSeconds(), 2, 0)
+    padStart(date.getUTCHours(), 2, 0) +
+    padStart(date.getUTCMinutes(), 2, 0) +
+    padStart(date.getUTCSeconds(), 2, 0) +
+    'Z'
   )
 }

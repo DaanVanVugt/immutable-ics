@@ -187,7 +187,7 @@ var INFINITY=1/0; var MAX_SAFE_INTEGER=9007199254740991; var MAX_INTEGER=1.79769
 
 var formatDate = (function(a){return a.getFullYear()+lodash_padstart(a.getMonth()+1,2,0)+lodash_padstart(a.getDate(),2,0)});
 
-var formatTime = (function(a){return lodash_padstart(a.getHours(),2,0)+lodash_padstart(a.getMinutes(),2,0)+lodash_padstart(a.getSeconds(),2,0)});
+var formatTime = (function(a){return lodash_padstart(a.getUTCHours(),2,0)+lodash_padstart(a.getUTCMinutes(),2,0)+lodash_padstart(a.getUTCSeconds(),2,0)+'Z'});
 
 var formatDateTime = (function(a){return formatDate(a)+'T'+formatTime(a)});
 

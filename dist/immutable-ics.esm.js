@@ -7,7 +7,7 @@ import padStart from 'lodash.padstart';
 
 var formatDate = (function(a){return a.getFullYear()+padStart(a.getMonth()+1,2,0)+padStart(a.getDate(),2,0)});
 
-var formatTime = (function(a){return padStart(a.getHours(),2,0)+padStart(a.getMinutes(),2,0)+padStart(a.getSeconds(),2,0)});
+var formatTime = (function(a){return padStart(a.getUTCHours(),2,0)+padStart(a.getUTCMinutes(),2,0)+padStart(a.getUTCSeconds(),2,0)+'Z'});
 
 var formatDateTime = (function(a){return formatDate(a)+'T'+formatTime(a)});
 
