@@ -1,6 +1,6 @@
 {
   "name": "immutable-ics",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Immutable iCalendar document creation",
   "main": "dist/immutable-ics.cjs.js",
   "module": "dist/immutable-ics.esm.js",
