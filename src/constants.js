@@ -6,7 +6,7 @@ export const PARAMETER_VALUE_KEY = 'VALUE'
 export const PROPERTY_KV_SEPARATOR = ':'
 export const VALUE_SEPARATOR = ','
 
-export const FOLD_REGEX = new RegExp(/[\s\S]{1,75}/g)
+export const FOLD_REGEX = new RegExp(/[\s\S]{1,73}/g)
 
 export const PREFIX = 'BEGIN'
 export const SUFFIX = 'END'
